@@ -11,38 +11,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="script.js">
+        <script src="script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8416647872093603"
-     crossorigin="anonymous"></script>
     </head>
     <body>
-            <div class="wrapper">
-              <div class="top-part">
-                <p>Your Previous Total: </p>
-                <input type="text" class="total-ammount" value ="0">
-            </div>
-              <div class = "btns">
-                <button type="button" class="value-btn">+1</button>
-                    <hr>
-                <input type="text" class="counter" value="0">
-                    <hr>
-                <button type="button" class="value-btn2">-1</button>
-                    <hr class ="not-hidden">
-                <button type="button" class="submit-clear">Clear</button>
-              </div>
-            </div>
-        <footer>
-            <div class = "navbar">
-                <ul>
-                  <li style ="border-left: solid #171717 2px"><a href="#">Support Us</a></li>
-                   </li>
-                   <li><a href="#">Contact</a></li>
-                  <li><a class="active" href="#">About</a> </li>
-                </ul>
-            </div>
-        </footer> 
-        <script src="" async defer></script>
+      <div class="wrapper">
+        <div class="top-part">
+        <p>Your Total: </p>
+          <button type="button" class="total-btn"><span id="total">0</span></button>
+        </div>
+        <div class = btns>
+          <button type="button" onClick="clicks++;updateClickCount();" class="Up">+1</button>
+  
+                  <div id="clickCount">0 </div>
+  
+          <button type="button" onClick="clicks--;updateClickCount();" id="Down">-1</button>
+                  <br>
+                  <br>
+          <button type="button" onClick="updateTotal();" id="push">Clear</button>
+        </div>
+      </div>
     </body>
 </html>
